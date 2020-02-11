@@ -3,10 +3,10 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.4/engine/Shopware/Components/Plugin/schema/plugin.xsd">
     <label>WebDAV</label>
 
-    <version>1.1.0</version>
+    <version>1.2.0</version>
     <license>MIT</license>
-    <link>https://www.ksk-agentur.de/</link>
-    <author>KSK-Agentur</author>
+    <link>https://www.heptacom.de/</link>
+    <author>HEPTACOM GmbH</author>
     <compatibility minVersion="5.3.0"/>
 
     <changelog version="1.0.0">
@@ -20,5 +20,9 @@
     <changelog version="1.1.0">
         <changes>Feature: Configurable document root</changes>
         <changes>Feature: Optional `safe mode` to keep webdav access intact</changes>
+    </changelog>
+    <changelog version="1.2.0">
+        <changes lang="en">Packagist release</changes>
+        <changes lang="de">Veröffentlichung auf Packagist</changes>
     </changelog>
 </plugin>

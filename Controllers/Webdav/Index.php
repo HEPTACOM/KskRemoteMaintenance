@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 use GuzzleHttp\Exception\TransferException;
 use KskRemoteMaintenance\Services\Authentication;
@@ -10,9 +10,6 @@ use Sabre\DAV\Locks\Plugin as LocksPlugin;
 use Sabre\DAV\Server;
 use Shopware\Components\Plugin\ConfigReader;
 
-/**
- * Class Shopware_Controllers_Webdav_Index
- */
 class Shopware_Controllers_Webdav_Index extends Enlight_Controller_Action
 {
     /**
@@ -76,8 +73,6 @@ class Shopware_Controllers_Webdav_Index extends Enlight_Controller_Action
      * added and then the server instance will be executed. Because the webdav
      * server sends its own headers, we need to kill the current request afterwards.
      * Otherwise the Enlight / Symfony framework would sabotage some responses.
-     *
-     * @param Server $server
      *
      * @throws Exception
      */

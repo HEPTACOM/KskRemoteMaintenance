@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace KskRemoteMaintenance\Services;
 
@@ -9,9 +9,6 @@ use Shopware\Models\User\Role;
 use Shopware\Models\User\User;
 use Shopware_Components_Acl;
 
-/**
- * Class Authentication
- */
 class Authentication extends AbstractBasic
 {
     /**
@@ -24,12 +21,6 @@ class Authentication extends AbstractBasic
      */
     private $modelManager;
 
-    /**
-     * Authentication constructor.
-     *
-     * @param Shopware_Components_Acl $acl
-     * @param ModelManager            $modelManager
-     */
     public function __construct(
         Shopware_Components_Acl $acl,
         ModelManager $modelManager

@@ -1,16 +1,20 @@
 # Changelog
 
-## v1.0.0
+## 1.2.0
 
-* Feature: WebDAV interface
-* Feature: Authentication via API access
-* Feature: Permission via ACL privilege
+- Packagist release
 
-## v1.0.1
+## 1.1.0
 
-* Bugfix: Installation does not destroy .htaccess anymore
+- Feature: Configurable document root
+- Feature: Optional `safe mode` to keep webdav access intact
 
-## v1.1.0
+## 1.0.1
 
-* Feature: Configurable document root
-* Feature: Optional `safe mode` to keep webdav access intact
+- Bugfix: Installation does not destroy .htaccess anymore
+
+## 1.0.0
+
+- Feature: WebDAV interface
+- Feature: Authentication via API access
+- Feature: Permission via ACL privilege

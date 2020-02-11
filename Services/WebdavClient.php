@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace KskRemoteMaintenance\Services;
 
@@ -32,13 +32,6 @@ class WebdavClient
      */
     private $front;
 
-    /**
-     * WebdavClient constructor.
-     *
-     * @param GuzzleFactory            $guzzleFactory
-     * @param Router                   $router
-     * @param Enlight_Controller_Front $front
-     */
     public function __construct(GuzzleFactory $guzzleFactory, Router $router, Enlight_Controller_Front $front)
     {
         $this->guzzleFactory = $guzzleFactory;

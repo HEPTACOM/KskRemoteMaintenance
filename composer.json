@@ -1,8 +1,42 @@
 {
+    "name": "heptacom/shopware-ksk-remote-maintenance",
+    "license": "MIT",
+    "description": "Shopware plugin to access filesystem via WebDAV protocol",
+    "type": "shopware-plugin",
+    "keywords": [
+        "ecommerce",
+        "shopware",
+        "shopware-plugin",
+        "webdav",
+        "devops"
+    ],
+    "authors": [
+        {
+            "name": "HEPTACOM GmbH",
+            "role": "Manufacturer"
+        },
+        {
+            "name": "Julian Krzefski",
+            "role": "Developer"
+        }
+    ],
     "require": {
+        "php": ">= 7.2",
         "sabre/dav": "~3.2.0"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.10"
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "kubawerlos/php-cs-fixer-custom-fixers": "^1.17"
+    },
+    "extra": {
+        "installer-name": "KskRemoteMaintenance"
+    },
+    "scripts": {
+        "php-lint": [
+            "php-cs-fixer fix --allow-risky=yes --dry-run"
+        ],
+        "php-lint-fix": [
+            "php-cs-fixer fix --allow-risky=yes"
+        ]
     }
 }

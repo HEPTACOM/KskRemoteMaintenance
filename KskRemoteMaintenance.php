@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types=1);
 
 namespace KskRemoteMaintenance;
 
@@ -9,9 +9,6 @@ use Shopware\Components\Plugin\Context\InstallContext;
 use Shopware\Components\Plugin\Context\UninstallContext;
 use Shopware_Components_Acl;
 
-/**
- * Class KskRemoteMaintenance
- */
 class KskRemoteMaintenance extends Plugin
 {
     const HTACCESS_DELIMITER_BEGIN = '# BEGIN KskRemoteMaintenance';
